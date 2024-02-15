@@ -1,21 +1,32 @@
+function rag_area() {
 
-function rag_area(){
+    const width = document.getElementById('width');
+
+    const widval = width.value;
+
+    const widthval = parseFloat(widval);
+
+    console.log( widthval);
+
+
+    const len = document.getElementById('length');
+
+    const lenval = len.value;
     
-   const width = document.getElementById('width');
+    const lengthval = parseFloat(lenval);
 
-   
-    let  val= width.value;
-    
-    let widthVal = parseFloat(val);
-    // console.log(typeof widthVal);
+    console.log( lengthval);
 
-    const lengths = document.getElementById('length');
 
-    let lenVal= lengths.value;
+   const area = widthval * lengthval ;
 
-    let lengthVal = parseFloat(lenVal);
-    
 
-    let area = widthVal * lengthVal;
-    // console.log(area);
+   const res = document.getElementById('result');
+
+    // let out = res.innerHTML=area;
+
+
+    let out = res.innerHTML = area;
+
+
 }

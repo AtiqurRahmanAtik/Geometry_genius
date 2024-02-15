@@ -29,7 +29,7 @@
                 <!--card 1 -->
               
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="text-center font-bold">Triangle</h2>
                       <p class="text-center">Area (A) = 0.5 x  b x h</p>
@@ -60,7 +60,7 @@
 
                 <!--card 2 -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title"> Rectangle</h2>
                       <p>Area (A) = w X  I</p>
@@ -70,12 +70,13 @@
                         <input id="width" type="text" class="w-20 bg-gray-200 p-3" placeholder="w">
                       <p class="ml-3 mr-3">cm</p>
 
-                      <input id=" length" type="text" class="w-20 bg-gray-200 p-3" placeholder="I" >
+
+                      <input id="length" type="text" class="w-20 bg-gray-200 p-3" placeholder="I" >
                       <p class="ml-3">cm</p>
                       </div>
 
                       <div>
-                        <p>Area : <span> </span> 
+                        <p>Area : <span id="result"></span> 
                             <span>cm <sup>2</sup></span></p>
                       </div>
 
@@ -89,12 +90,31 @@
                       <!--card 3-->
 
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b  X  h</p>
+                      <p>b=10cm, h=12cm</p>
+
+                      <p id="demo"></p>
+
+                      <div>
+
+                        <input class="bg-gray-300 w-20 p-3" type="text" name="input" id="based" placeholder="b">
+                        <span>cm</span>
+
+                        <input class="bg-gray-200 w-20 p-3" type="text" name="input" id="heightd" placeholder="h">
+                        <span>cm</span>
+                      </div>
+
+
+                      <div>
+
+                        <p>area: <span id="res"> </span> <span>cm</span></p>
+                      </div>
+
+                      <div class="card-actions ">
+                        <button onclick="paralegonarea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -104,24 +124,54 @@
 
                 <!--card 4 -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="./images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">pentagon</h2>
+                      <p>Area = 0.5 X p X b </p>
+
+                      <div>
+
+                        <input class="w-20 bg-gray-200 p-3" type="text" id="pen" placeholder="p">
+                        <span>cm</span>
+
+                        <input class="w-20 p-3 bg-gray-200" type="text" id="ba" placeholder="b">
+                        <span><command></span>
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p> Area : <span id="span"> </span> <span>cm2</span></p>
+                      </div>
+
+                      <div class="card-actions ">
+                        <button onclick="pentagonArea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
                   
                 <!--card 5 -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area : Π *  a * b</p>
+
+                      <div> 
+
+                        <input id="a" type="text" class="w-20 p-3 bg-gray-200">
+                        <span> cm</span>
+
+                        <input id="b" type="text" class="w-20 p-3 bg-gray-200">
+                        <span> cm</span>
+
+                      </div>
+
+                      <div>
+                        <p>Area: <span id="r"> </span> <span>cm2</span></p>
+                      </div>
+
+                      <div class="card-actions ">
+                        <button onclick="ellispsArea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -162,5 +212,12 @@
 <script src="/js/triangle.js"></script>
 
 <script src="/js/ragtangle.js"></script>
+
+<script src="/js/paralegorn.js"></script>
+
+<script src="/js/pentagon.js"></script>
+
+
+<script src="/js/ellisps.js"></script>
 </body>
 </html>
